@@ -1,0 +1,140 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  overflow: hidden;
+  background-color: #f7bdd6;
+}
+.main {
+  position: relative;
+  width: 400px;
+  height: 400px;
+}
+
+.circulo {
+  width: 400px;
+  height: 400px;
+  border-radius: 50%;
+  border: 5px solid #fff;
+}
+
+.telhado {
+  position: absolute;
+  z-index: 2;
+  bottom: 177px;
+  left: 174px;
+  width: 100px;
+  height: 175px;
+  background: #fff;
+  transform: rotateX(60deg) rotateY(25deg) skew(19deg);
+}
+.chamine {
+  position: absolute;
+  top: 58px;
+  left: 205px;
+  z-index: 2;
+  background: #fff;
+  width: 30px;
+  height: 60px;
+  transform: rotateX(0deg) rotateY(0deg) skew(0deg) !important;
+}
+.telhado2 {
+  position: absolute;
+  z-index: 2;
+  bottom: 195px;
+  left: 115px;
+  width: 10px;
+  height: 150px;
+  background: #fff;
+  transform: rotate(27deg);
+}
+.parede-frente {
+  position: absolute;
+  bottom: 122px;
+  left: 100px;
+  border-top: 100px solid #f5755d;
+  border-left: 20px solid transparent;
+  border-right: 15px solid transparent;
+  height: 0;
+  width: 120px;
+}
+
+.parede-frente::before {
+  content: "";
+  position: absolute;
+  bottom: 96px;
+  left: -20px;
+  border-left: 55px solid transparent;
+  border-right: 55px solid transparent;
+  border-bottom: 115px solid #f5755d;
+  transform: rotateX(-20deg) rotateY(2deg);
+}
+.porta {
+  position: absolute;
+  bottom: 0px;
+  left: 15px;
+  width: 50px;
+  height: 80px;
+  background: #5e2d42;
+  border-top-left-radius: 60px;
+  border-top-right-radius: 60px;
+  transform: rotate(-7deg);
+}
+
+.janela {
+  position: absolute;
+  z-index: 4;
+  bottom: 100px;
+  left: 10px;
+  background: #ffdeec;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  background-image: linear-gradient(
+      to right,
+      transparent 10%,
+      transparent 90%,
+      #fff 90%
+    ),
+    linear-gradient(to bottom, transparent 10%, transparent 90%, #fff 90%);
+  background-size: 20px 20px;
+  border: 3px solid #fff;
+  transform: rotate(-6deg);
+}
+.parede-lateral {
+  position: absolute;
+  background-color: #e15839;
+  bottom: 120px;
+  left: 200px;
+  width: 80px;
+  height: 100px;
+  transform: rotateX(20deg) rotateY(40deg);
+}
+.neve {
+  position: absolute;
+  bottom: -25px;
+  left: 52.5%;
+  transform: translateX(-50%) rotate(35deg);
+  background-color: #fff;
+  width: 240px;
+  height: 200px;
+  border-top-left-radius: 200px;
+  border-bottom-right-radius: 200px;
+}
+
+.neve2 {
+  width: 120px;
+  height: 90px;
+  bottom: 40px;
+  left: 86px;
+  border-top-left-radius: 100px;
+  border-bottom-right-radius: 100px;
+  transform: translateX(-50%) rotate(66deg);
+}

@@ -224,3 +224,12 @@ body {
   background-color: #fff;
   transform: scale(0.1);
 }
+.estrela5 {
+  position: relative;
+  left: 200px;
+  bottom: 420px;
+  width: 100px;
+  height: 100px;
+  background-color: #fff;
+  transform: scale(0.15);
+}

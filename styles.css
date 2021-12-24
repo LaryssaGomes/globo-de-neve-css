@@ -27,10 +27,10 @@ body {
 
 .telhado {
   position: absolute;
-  z-index: 2;
+  z-index: 10;
   bottom: 177px;
   left: 174px;
-  width: 100px;
+  width: 110px;
   height: 175px;
   background: #fff;
   transform: rotateX(60deg) rotateY(25deg) skew(19deg);
@@ -56,6 +56,7 @@ body {
   transform: rotate(27deg);
 }
 .parede-frente {
+  z-index: 2;
   position: absolute;
   bottom: 122px;
   left: 100px;
@@ -67,32 +68,33 @@ body {
 }
 
 .parede-frente::before {
+  z-index: 2;
   content: "";
   position: absolute;
-  bottom: 96px;
+  bottom: 100px;
   left: -20px;
-  border-left: 55px solid transparent;
-  border-right: 55px solid transparent;
+  border-left: 60px solid transparent;
+  border-right: 60px solid transparent;
   border-bottom: 115px solid #f5755d;
-  transform: rotateX(-20deg) rotateY(2deg);
 }
 .porta {
   position: absolute;
   bottom: 0px;
-  left: 15px;
+  left: 50%;
+  transform: translateX(-50%);
   width: 50px;
   height: 80px;
   background: #5e2d42;
   border-top-left-radius: 60px;
   border-top-right-radius: 60px;
-  transform: rotate(-7deg);
 }
 
 .janela {
   position: absolute;
   z-index: 4;
   bottom: 100px;
-  left: 10px;
+  left: 50%;
+  transform: translateX(-50%);
   background: #ffdeec;
   height: 40px;
   width: 40px;
@@ -106,18 +108,18 @@ body {
     linear-gradient(to bottom, transparent 10%, transparent 90%, #fff 90%);
   background-size: 20px 20px;
   border: 3px solid #fff;
-  transform: rotate(-6deg);
 }
 .parede-lateral {
   position: absolute;
   background-color: #e15839;
   bottom: 120px;
   left: 200px;
-  width: 80px;
+  width: 75px;
   height: 100px;
-  transform: rotateX(20deg) rotateY(40deg);
+  transform: rotate(10deg);
 }
 .neve {
+  z-index: 5;
   position: absolute;
   bottom: -25px;
   left: 52.5%;
@@ -130,6 +132,7 @@ body {
 }
 
 .neve2 {
+  z-index: 5;
   width: 120px;
   height: 90px;
   bottom: 40px;
@@ -137,4 +140,87 @@ body {
   border-top-left-radius: 100px;
   border-bottom-right-radius: 100px;
   transform: translateX(-50%) rotate(66deg);
+}
+.base {
+  position: absolute;
+  bottom: -60px;
+  left: 50%;
+  z-index: -1;
+  background-color: #5e2d42;
+  transform: translateX(-50%);
+  width: 220px;
+  height: 120px;
+  border-top-left-radius: 100px;
+  border-top-right-radius: 100px;
+}
+
+.estrela {
+  position: relative;
+  left: 50px;
+  width: 100px;
+  height: 100px;
+  background-color: #fff;
+  transform: scale(0.3);
+}
+.circulo-baixo-direta {
+  position: absolute;
+  height: 50px;
+  width: 50px;
+  bottom: -2px;
+  left: -2px;
+  border-top-right-radius: 100px;
+  background-color: #f7bdd6;
+}
+.circulo-baixo-esquerda {
+  position: absolute;
+  height: 50px;
+  width: 50px;
+  bottom: -2px;
+  right: -2px;
+  border-top-left-radius: 120px;
+  background-color: #f7bdd6;
+}
+.circulo-cima-direta {
+  position: absolute;
+  height: 50px;
+  width: 50px;
+  top: -2px;
+  left: -2px;
+  border-bottom-right-radius: 120px;
+  background-color: #f7bdd6;
+}
+.circulo-cima-esquerda {
+  position: absolute;
+  height: 50px;
+  width: 50px;
+  top: -2px;
+  right: -2px;
+  border-bottom-left-radius: 120px;
+  background-color: #f7bdd6;
+}
+.estrela2 {
+  position: relative;
+  left: 250px;
+  width: 100px;
+  height: 100px;
+  background-color: #fff;
+  transform: scale(0.2);
+}
+.estrela3 {
+  position: relative;
+  left: 20px;
+  bottom: 50px;
+  width: 100px;
+  height: 100px;
+  background-color: #fff;
+  transform: scale(0.2);
+}
+.estrela4 {
+  position: relative;
+  left: 270px;
+  bottom: 100px;
+  width: 100px;
+  height: 100px;
+  background-color: #fff;
+  transform: scale(0.1);
 }
